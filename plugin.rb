@@ -16,11 +16,11 @@ after_initialize do
       isUnhandled = topic.tags.pluck(:id).include?(tag.id)
       isStaff = user.staff? || user.email&.end_with?("@marfeel.com")
 
-      if !isUnhandled && !user.staff?
+      if !isUnhandled && !isStaff
         topic.tags.reload
         topic.tags << tag
         topic.save
-      elsif isUnhandled && user.staff?
+      elsif isUnhandled && isStaff
         topic.tags.reload
         topic.tags.delete(tag.id)
         topic.save
