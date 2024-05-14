@@ -15,11 +15,11 @@ export default {
       "showHandled",
       computed(
         "currentUser.staff",
-        "args.topic.isPrivateMessage",
+        "currentUser.email",
         () =>
-          this.currentUser &&
-          this.currentUser.staff &&
-          !this.args.topic.isPrivateMessage
+          this.currentUser && (
+            this.currentUser.staff || this.currentUser.email.endsWith("marfeel.com")
+          )
       )
     );
 
