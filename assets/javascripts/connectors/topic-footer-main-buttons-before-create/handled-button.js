@@ -18,7 +18,7 @@ export default {
         "currentUser.email",
         () =>
           this.currentUser && (
-            this.currentUser.staff || this.currentUser.email.endsWith("marfeel.com")
+            this.currentUser.staff || this.currentUser.email.endsWith("@marfeel.com")
           )
       )
     );
