@@ -7,3 +7,5 @@ en:
       unhandle:
         title: "Unhandle"
         help: "Mark topic as unhandled"
+  site_settings:
+    unhandled_tag_enabled: "Enable unhandled tag plugin"
