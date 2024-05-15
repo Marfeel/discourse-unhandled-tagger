@@ -5,6 +5,8 @@
 # version: 0.1
 # authors: Sam Saffron
 
+enabled_site_setting :unhandled_tag_enabled
+
 after_initialize do
   DiscourseEvent.on(:post_created) do |post, _, user|
     next if SiteSetting.unhandled_tag.blank?

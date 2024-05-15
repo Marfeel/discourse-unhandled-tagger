@@ -1,4 +1,7 @@
 plugins:
+  unhandled_tag_enabled:
+    default: false
+    client: true
   unhandled_tag:
     default: 'unhandled'
     client: true

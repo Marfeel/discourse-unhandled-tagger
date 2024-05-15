@@ -5,7 +5,8 @@ export default {
   shouldRender(args, component) {
     return (
       component.siteSettings.tagging_enabled &&
-      component.siteSettings.unhandled_tag
+      component.siteSettings.unhandled_tag &&
+      component.siteSettings.unhandled_tag_enabled
     );
   },
 
