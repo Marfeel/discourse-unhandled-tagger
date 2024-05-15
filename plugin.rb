@@ -1,9 +1,9 @@
 # frozen_string_literal: true
 
 # name: discourse-unhandled-tagger
-# about: Add an "unhandled" tag to every topic where non-staff post
+# about: Add an "unhandled" tag to every topic where non-staff post, removing it if not
 # version: 0.1
-# authors: Sam Saffron
+# authors: Marfeel
 
 enabled_site_setting :unhandled_tag_enabled
 
